@@ -14,7 +14,7 @@ class LoginVC: UIViewController {
            txt.backgroundColor = .white
            txt.keyboardType = .emailAddress
            txt.placeholder = "Email address"
-           txt.layer.borderWidth = 0.7
+           txt.layer.borderWidth = 0.4
            return txt
        }()
        
@@ -23,7 +23,7 @@ class LoginVC: UIViewController {
        txt.backgroundColor = .white
        txt.isSecureTextEntry = true
        txt.placeholder = "Password"
-        txt.layer.borderWidth = 0.7
+        txt.layer.borderWidth = 0.4
        return txt
     }()
    
@@ -63,7 +63,7 @@ class LoginVC: UIViewController {
        let label = UILabel()
        label.font = .systemFont(ofSize: 24, weight: .medium)
        label.text = "Forgot password?"
-       label.textColor =  #colorLiteral(red: 0.3011791706, green: 0.3271438479, blue: 0.3620740175, alpha: 0.9192880795)
+       label.textColor =  #colorLiteral(red: 0.338365823, green: 0.3724653423, blue: 0.4117808342, alpha: 0.9192880795)
        return label
     }()
 
@@ -74,7 +74,7 @@ class LoginVC: UIViewController {
        btn.setTitleColor( #colorLiteral(red: 0.3011791706, green: 0.3271438479, blue: 0.3620740175, alpha: 0.9192880795), for: .normal)
        btn.layer.cornerRadius = 15
        btn.backgroundColor = .white
-        btn.layer.borderWidth = 0.7
+        btn.layer.borderWidth = 0.4
         btn.layer.borderColor = UIColor.black.cgColor
        btn.titleLabel?.font = UIFont.systemFont(ofSize: 28, weight: .medium)
        //btn.addTarget(self, action: #selector(clickLoginBtn), for: .touchUpInside)
@@ -87,12 +87,18 @@ class LoginVC: UIViewController {
        btn.setTitleColor(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), for: .normal)
        btn.layer.cornerRadius = 15
        btn.backgroundColor = .white
-       btn.layer.borderWidth = 1
+        btn.layer.borderWidth = 0.4
        btn.layer.borderColor = UIColor(red: 16/255, green: 129/255, blue: 49/255, alpha: 1).cgColor
        btn.titleLabel?.font = UIFont.systemFont(ofSize: 28, weight: .medium)
-       //btn.addTarget(self, action: #selector(goRegisterVC), for: .touchUpInside)
+       btn.addTarget(self, action: #selector(goRegisterVC), for: .touchUpInside)
        return btn
     }()
+    
+    // Go RegisterVC
+    @objc func goRegisterVC(){
+        let view = RegisterVC()
+        navigationController?.pushViewController(view, animated: true)
+    }
 
 
     override func viewDidLoad() {

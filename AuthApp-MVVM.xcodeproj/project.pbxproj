@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		638FF1712874D16F00237D51 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1702874D16F00237D51 /* RegisterVC.swift */; };
+		638FF1732874D23A00237D51 /* Extension+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1722874D23A00237D51 /* Extension+UIAlert.swift */; };
 		63DB7E3728741997006871C6 /* ActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3428741997006871C6 /* ActivityIndicatorProtocol.swift */; };
 		63DB7E3828741997006871C6 /* BlockingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3528741997006871C6 /* BlockingActivityIndicator.swift */; };
 		63DB7E3928741997006871C6 /* LoadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3628741997006871C6 /* LoadingProtocol.swift */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		4F50CE0EF55A00FB5D177D32 /* Pods-AuthApp-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-AuthApp-MVVM/Pods-AuthApp-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		5049CE98E6F982D5C9B0A618 /* Pods-AuthApp-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-MVVM.release.xcconfig"; path = "Target Support Files/Pods-AuthApp-MVVM/Pods-AuthApp-MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		638FF1702874D16F00237D51 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		638FF1722874D23A00237D51 /* Extension+UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIAlert.swift"; sourceTree = "<group>"; };
 		63DB7E3428741997006871C6 /* ActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
 		63DB7E3528741997006871C6 /* BlockingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockingActivityIndicator.swift; sourceTree = "<group>"; };
 		63DB7E3628741997006871C6 /* LoadingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingProtocol.swift; sourceTree = "<group>"; };
@@ -157,11 +161,28 @@
 		632AE22F28739D3400C12C51 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				638FF16F2874D15F00237D51 /* Register */,
+				638FF16E2874D15600237D51 /* ForgotPassword */,
 				63DB7E5B28741FAA006871C6 /* Base */,
 				63DB7E3A287419C7006871C6 /* Login */,
-				63DB7E7C28743F95006871C6 /* ForgotPasswordVC.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		638FF16E2874D15600237D51 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				63DB7E7C28743F95006871C6 /* ForgotPasswordVC.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		638FF16F2874D15F00237D51 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				638FF1702874D16F00237D51 /* RegisterVC.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		63DB7E3228741930006871C6 /* Cells */ = {
@@ -230,6 +251,7 @@
 			children = (
 				63DB7E5928741E63006871C6 /* Extension+UIView.swift */,
 				63DB7E7A28742CF5006871C6 /* Extension+TextField.swift */,
+				638FF1722874D23A00237D51 /* Extension+UIAlert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,11 +462,13 @@
 				63DB7E5728741E29006871C6 /* UIActivityIndicatorView.swift in Sources */,
 				63DB7E7D28743F95006871C6 /* ForgotPasswordVC.swift in Sources */,
 				63DB7E73287420BB006871C6 /* Router.swift in Sources */,
+				638FF1732874D23A00237D51 /* Extension+UIAlert.swift in Sources */,
 				63DB7E4128741AFC006871C6 /* APIRequestAdapter.swift in Sources */,
 				63DB7E4228741AFC006871C6 /* APIRequestInterceptor.swift in Sources */,
 				63DB7E4428741AFC006871C6 /* APIDataProvider.swift in Sources */,
 				63DB7E4328741AFC006871C6 /* DataProvider.swift in Sources */,
 				63DB7E4E28741D0E006871C6 /* RequestMethod.swift in Sources */,
+				638FF1712874D16F00237D51 /* RegisterVC.swift in Sources */,
 				63E2F42D2873551400282E60 /* LoginVC.swift in Sources */,
 				63DB7E5428741D0E006871C6 /* DecodableResponseRequest.swift in Sources */,
 				63DB7E3828741997006871C6 /* BlockingActivityIndicator.swift in Sources */,
