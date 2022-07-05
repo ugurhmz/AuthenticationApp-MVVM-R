@@ -32,6 +32,7 @@
 		63DB7E73287420BB006871C6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E72287420BB006871C6 /* Router.swift */; };
 		63DB7E75287420D0006871C6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E74287420D0006871C6 /* LoginRouter.swift */; };
 		63DB7E772874214D006871C6 /* AppRouterContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E762874214D006871C6 /* AppRouterContainer.swift */; };
+		63DB7E7B28742CF5006871C6 /* Extension+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E7A28742CF5006871C6 /* Extension+TextField.swift */; };
 		63E2F4292873551400282E60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F4282873551400282E60 /* AppDelegate.swift */; };
 		63E2F42D2873551400282E60 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F42C2873551400282E60 /* LoginVC.swift */; };
 		63E2F4322873551500282E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E2F4312873551500282E60 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		63DB7E74287420D0006871C6 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		63DB7E762874214D006871C6 /* AppRouterContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouterContainer.swift; sourceTree = "<group>"; };
 		63DB7E78287421DE006871C6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DB7E7A28742CF5006871C6 /* Extension+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextField.swift"; sourceTree = "<group>"; };
 		63E2F4252873551400282E60 /* AuthApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AuthApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E2F4282873551400282E60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E2F42C2873551400282E60 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				63DB7E5928741E63006871C6 /* Extension+UIView.swift */,
+				63DB7E7A28742CF5006871C6 /* Extension+TextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				63DB7E3828741997006871C6 /* BlockingActivityIndicator.swift in Sources */,
 				63DB7E5D28741FDF006871C6 /* MainNavigationController.swift in Sources */,
 				63DB7E4F28741D0E006871C6 /* RequestEncoding.swift in Sources */,
+				63DB7E7B28742CF5006871C6 /* Extension+TextField.swift in Sources */,
 				63DB7E3928741997006871C6 /* LoadingProtocol.swift in Sources */,
 				63DB7E5128741D0E006871C6 /* DataProviderProtocol.swift in Sources */,
 				63DB7E5328741D0E006871C6 /* RequestProtocol.swift in Sources */,
