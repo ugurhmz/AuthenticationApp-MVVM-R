@@ -70,16 +70,30 @@ class LoginVC: BaseViewController<LoginViewModel> {
     private let loginBtn: UIButton = {
        let btn = UIButton(type: .system)
        btn.setTitle("Login", for: .normal)
-      //  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
        btn.setTitleColor( #colorLiteral(red: 0.3011791706, green: 0.3271438479, blue: 0.3620740175, alpha: 0.9192880795), for: .normal)
        btn.layer.cornerRadius = 15
        btn.backgroundColor = .white
         btn.layer.borderWidth = 0.4
         btn.layer.borderColor = UIColor.black.cgColor
        btn.titleLabel?.font = UIFont.systemFont(ofSize: 28, weight: .medium)
-       //btn.addTarget(self, action: #selector(clickLoginBtn), for: .touchUpInside)
+       btn.addTarget(self, action: #selector(clickLoginBtn), for: .touchUpInside)
        return btn
     }()
+    
+    @objc func clickLoginBtn(){
+        guard let email = txtEmail.text, !email.isEmpty,
+                   let password = txtPassword.text, !password.isEmpty else {
+                       self.createAlert(title: "",
+                                        msg: "Email or password is empty!",
+                                        prefStyle: .alert,
+                                        bgColor: .white,
+                                        textColor: .black,
+                                        fontSize: 25)
+                       return
+       }
+        
+        viewModel.sendLoginRequest(email: email, password: password)
+    }
     
     private let registerBtn: UIButton = {
        let btn = UIButton(type: .system)

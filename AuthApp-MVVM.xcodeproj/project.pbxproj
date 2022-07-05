@@ -14,6 +14,8 @@
 		638FF17A2874DF1600237D51 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1792874DF1600237D51 /* Closures.swift */; };
 		638FF17C2874DF4100237D51 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF17B2874DF4100237D51 /* LoginViewModel.swift */; };
 		638FF17E2874E04B00237D51 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF17D2874E04B00237D51 /* LoginModel.swift */; };
+		638FF1812874E16300237D51 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1802874E16300237D51 /* LoginRequest.swift */; };
+		638FF1842874E1F200237D51 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1832874E1F200237D51 /* LoginResponseModel.swift */; };
 		63DB7E3728741997006871C6 /* ActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3428741997006871C6 /* ActivityIndicatorProtocol.swift */; };
 		63DB7E3828741997006871C6 /* BlockingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3528741997006871C6 /* BlockingActivityIndicator.swift */; };
 		63DB7E3928741997006871C6 /* LoadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3628741997006871C6 /* LoadingProtocol.swift */; };
@@ -57,6 +59,8 @@
 		638FF1792874DF1600237D51 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		638FF17B2874DF4100237D51 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		638FF17D2874E04B00237D51 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		638FF1802874E16300237D51 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		638FF1832874E1F200237D51 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		63DB7E3428741997006871C6 /* ActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
 		63DB7E3528741997006871C6 /* BlockingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockingActivityIndicator.swift; sourceTree = "<group>"; };
 		63DB7E3628741997006871C6 /* LoadingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingProtocol.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		632AE22828739CF100C12C51 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				638FF1822874E1AC00237D51 /* ResponseModel */,
+				638FF17F2874E14D00237D51 /* Requests */,
 				63DB7E4628741CFD006871C6 /* Core */,
 			);
 			path = DataProvider;
@@ -202,6 +208,22 @@
 				638FF1792874DF1600237D51 /* Closures.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		638FF17F2874E14D00237D51 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				638FF1802874E16300237D51 /* LoginRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		638FF1822874E1AC00237D51 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				638FF1832874E1F200237D51 /* LoginResponseModel.swift */,
+			);
+			path = ResponseModel;
 			sourceTree = "<group>";
 		};
 		63DB7E3228741930006871C6 /* Cells */ = {
@@ -487,6 +509,7 @@
 				63DB7E7D28743F95006871C6 /* ForgotPasswordVC.swift in Sources */,
 				63DB7E73287420BB006871C6 /* Router.swift in Sources */,
 				638FF1732874D23A00237D51 /* Extension+UIAlert.swift in Sources */,
+				638FF1812874E16300237D51 /* LoginRequest.swift in Sources */,
 				63DB7E4128741AFC006871C6 /* APIRequestAdapter.swift in Sources */,
 				63DB7E4228741AFC006871C6 /* APIRequestInterceptor.swift in Sources */,
 				63DB7E4428741AFC006871C6 /* APIDataProvider.swift in Sources */,
@@ -510,6 +533,7 @@
 				63E2F4292873551400282E60 /* AppDelegate.swift in Sources */,
 				63DB7E5028741D0E006871C6 /* Typealias.swift in Sources */,
 				63DB7E5228741D0E006871C6 /* APIDecodableResponseRequest.swift in Sources */,
+				638FF1842874E1F200237D51 /* LoginResponseModel.swift in Sources */,
 				63DB7E71287420B2006871C6 /* AppRouter.swift in Sources */,
 				63DB7E3728741997006871C6 /* ActivityIndicatorProtocol.swift in Sources */,
 				63DB7E5F2874200E006871C6 /* LoginRoute.swift in Sources */,
