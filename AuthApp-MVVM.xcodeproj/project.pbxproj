@@ -24,6 +24,14 @@
 		63DB7E5428741D0E006871C6 /* DecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E4D28741D0E006871C6 /* DecodableResponseRequest.swift */; };
 		63DB7E5728741E29006871C6 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E5628741E29006871C6 /* UIActivityIndicatorView.swift */; };
 		63DB7E5A28741E63006871C6 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E5928741E63006871C6 /* Extension+UIView.swift */; };
+		63DB7E5D28741FDF006871C6 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E5C28741FDF006871C6 /* MainNavigationController.swift */; };
+		63DB7E5F2874200E006871C6 /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E5E2874200E006871C6 /* LoginRoute.swift */; };
+		63DB7E6E287420A9006871C6 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E6C287420A9006871C6 /* Transition.swift */; };
+		63DB7E6F287420A9006871C6 /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E6D287420A9006871C6 /* PlaceOnWindowTransition.swift */; };
+		63DB7E71287420B2006871C6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E70287420B2006871C6 /* AppRouter.swift */; };
+		63DB7E73287420BB006871C6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E72287420BB006871C6 /* Router.swift */; };
+		63DB7E75287420D0006871C6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E74287420D0006871C6 /* LoginRouter.swift */; };
+		63DB7E772874214D006871C6 /* AppRouterContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E762874214D006871C6 /* AppRouterContainer.swift */; };
 		63E2F4292873551400282E60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F4282873551400282E60 /* AppDelegate.swift */; };
 		63E2F42D2873551400282E60 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F42C2873551400282E60 /* LoginVC.swift */; };
 		63E2F4322873551500282E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E2F4312873551500282E60 /* Assets.xcassets */; };
@@ -50,11 +58,19 @@
 		63DB7E4D28741D0E006871C6 /* DecodableResponseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableResponseRequest.swift; sourceTree = "<group>"; };
 		63DB7E5628741E29006871C6 /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
 		63DB7E5928741E63006871C6 /* Extension+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		63DB7E5C28741FDF006871C6 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		63DB7E5E2874200E006871C6 /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		63DB7E6C287420A9006871C6 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		63DB7E6D287420A9006871C6 /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		63DB7E70287420B2006871C6 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		63DB7E72287420BB006871C6 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		63DB7E74287420D0006871C6 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		63DB7E762874214D006871C6 /* AppRouterContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouterContainer.swift; sourceTree = "<group>"; };
+		63DB7E78287421DE006871C6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E2F4252873551400282E60 /* AuthApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AuthApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E2F4282873551400282E60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E2F42C2873551400282E60 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		63E2F4312873551500282E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63E2F4362873551500282E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1FD2729FFCBA77FC04C8090 /* Pods_AuthApp_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthApp_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,10 +105,10 @@
 		632AE22928739CF800C12C51 /* AuthProject */ = {
 			isa = PBXGroup;
 			children = (
+				63DB7E622874207F006871C6 /* Routing */,
 				63DB7E3B28741A35006871C6 /* DataProvider */,
 				632AE22728739C8300C12C51 /* Resources */,
 				632AE22F28739D3400C12C51 /* Scenes */,
-				632AE22E28739D2F00C12C51 /* Routing */,
 				632AE22D28739D2600C12C51 /* Configurations */,
 				632AE22C28739D1B00C12C51 /* AppDelegate */,
 			);
@@ -120,6 +136,7 @@
 		632AE22C28739D1B00C12C51 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				63DB7E762874214D006871C6 /* AppRouterContainer.swift */,
 				63E2F4282873551400282E60 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
@@ -128,21 +145,15 @@
 		632AE22D28739D2600C12C51 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				63E2F4362873551500282E60 /* Info.plist */,
+				63DB7E78287421DE006871C6 /* Info.plist */,
 			);
 			path = Configurations;
-			sourceTree = "<group>";
-		};
-		632AE22E28739D2F00C12C51 /* Routing */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Routing;
 			sourceTree = "<group>";
 		};
 		632AE22F28739D3400C12C51 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				63DB7E5B28741FAA006871C6 /* Base */,
 				63DB7E3A287419C7006871C6 /* Login */,
 			);
 			path = Scenes;
@@ -169,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				63E2F42C2873551400282E60 /* LoginVC.swift */,
+				63DB7E5E2874200E006871C6 /* LoginRoute.swift */,
+				63DB7E74287420D0006871C6 /* LoginRouter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -215,6 +228,49 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		63DB7E5B28741FAA006871C6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				63DB7E5C28741FDF006871C6 /* MainNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		63DB7E622874207F006871C6 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				63DB7E6B2874209E006871C6 /* Core */,
+				63DB7E6A2874209A006871C6 /* Routers */,
+				63DB7E6928742095006871C6 /* Transitions */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		63DB7E6928742095006871C6 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				63DB7E6D287420A9006871C6 /* PlaceOnWindowTransition.swift */,
+				63DB7E6C287420A9006871C6 /* Transition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		63DB7E6A2874209A006871C6 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				63DB7E70287420B2006871C6 /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		63DB7E6B2874209E006871C6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				63DB7E72287420BB006871C6 /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		63E2F41C2873551400282E60 = {
 			isa = PBXGroup;
 			children = (
@@ -238,8 +294,8 @@
 			children = (
 				632AE22B28739D0A00C12C51 /* Utilities */,
 				632AE22A28739D0100C12C51 /* UIComponents */,
-				632AE22928739CF800C12C51 /* AuthProject */,
 				632AE22828739CF100C12C51 /* DataProvider */,
+				632AE22928739CF800C12C51 /* AuthProject */,
 			);
 			path = "AuthApp-MVVM";
 			sourceTree = "<group>";
@@ -376,6 +432,7 @@
 			files = (
 				63DB7E4528741AFC006871C6 /* APILogger.swift in Sources */,
 				63DB7E5728741E29006871C6 /* UIActivityIndicatorView.swift in Sources */,
+				63DB7E73287420BB006871C6 /* Router.swift in Sources */,
 				63DB7E4128741AFC006871C6 /* APIRequestAdapter.swift in Sources */,
 				63DB7E4228741AFC006871C6 /* APIRequestInterceptor.swift in Sources */,
 				63DB7E4428741AFC006871C6 /* APIDataProvider.swift in Sources */,
@@ -384,15 +441,22 @@
 				63E2F42D2873551400282E60 /* LoginVC.swift in Sources */,
 				63DB7E5428741D0E006871C6 /* DecodableResponseRequest.swift in Sources */,
 				63DB7E3828741997006871C6 /* BlockingActivityIndicator.swift in Sources */,
+				63DB7E5D28741FDF006871C6 /* MainNavigationController.swift in Sources */,
 				63DB7E4F28741D0E006871C6 /* RequestEncoding.swift in Sources */,
 				63DB7E3928741997006871C6 /* LoadingProtocol.swift in Sources */,
 				63DB7E5128741D0E006871C6 /* DataProviderProtocol.swift in Sources */,
 				63DB7E5328741D0E006871C6 /* RequestProtocol.swift in Sources */,
 				63DB7E5A28741E63006871C6 /* Extension+UIView.swift in Sources */,
+				63DB7E6E287420A9006871C6 /* Transition.swift in Sources */,
 				63E2F4292873551400282E60 /* AppDelegate.swift in Sources */,
 				63DB7E5028741D0E006871C6 /* Typealias.swift in Sources */,
 				63DB7E5228741D0E006871C6 /* APIDecodableResponseRequest.swift in Sources */,
+				63DB7E71287420B2006871C6 /* AppRouter.swift in Sources */,
 				63DB7E3728741997006871C6 /* ActivityIndicatorProtocol.swift in Sources */,
+				63DB7E5F2874200E006871C6 /* LoginRoute.swift in Sources */,
+				63DB7E75287420D0006871C6 /* LoginRouter.swift in Sources */,
+				63DB7E772874214D006871C6 /* AppRouterContainer.swift in Sources */,
+				63DB7E6F287420A9006871C6 /* PlaceOnWindowTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
