@@ -22,6 +22,8 @@
 		63DB7E5228741D0E006871C6 /* APIDecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E4B28741D0E006871C6 /* APIDecodableResponseRequest.swift */; };
 		63DB7E5328741D0E006871C6 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E4C28741D0E006871C6 /* RequestProtocol.swift */; };
 		63DB7E5428741D0E006871C6 /* DecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E4D28741D0E006871C6 /* DecodableResponseRequest.swift */; };
+		63DB7E5728741E29006871C6 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E5628741E29006871C6 /* UIActivityIndicatorView.swift */; };
+		63DB7E5A28741E63006871C6 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E5928741E63006871C6 /* Extension+UIView.swift */; };
 		63E2F4292873551400282E60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F4282873551400282E60 /* AppDelegate.swift */; };
 		63E2F42D2873551400282E60 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F42C2873551400282E60 /* LoginVC.swift */; };
 		63E2F4322873551500282E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E2F4312873551500282E60 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		63DB7E4B28741D0E006871C6 /* APIDecodableResponseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDecodableResponseRequest.swift; sourceTree = "<group>"; };
 		63DB7E4C28741D0E006871C6 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		63DB7E4D28741D0E006871C6 /* DecodableResponseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableResponseRequest.swift; sourceTree = "<group>"; };
+		63DB7E5628741E29006871C6 /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
+		63DB7E5928741E63006871C6 /* Extension+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		63E2F4252873551400282E60 /* AuthApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AuthApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E2F4282873551400282E60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E2F42C2873551400282E60 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		632AE22A28739D0100C12C51 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				63DB7E5528741E21006871C6 /* UIActivityIndicatorView */,
 				63DB7E3328741952006871C6 /* Loading */,
 				63DB7E3228741930006871C6 /* Cells */,
 			);
@@ -107,6 +112,7 @@
 		632AE22B28739D0A00C12C51 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				63DB7E5828741E59006871C6 /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -191,6 +197,22 @@
 				63DB7E4928741D0E006871C6 /* Typealias.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		63DB7E5528741E21006871C6 /* UIActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				63DB7E5628741E29006871C6 /* UIActivityIndicatorView.swift */,
+			);
+			path = UIActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		63DB7E5828741E59006871C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63DB7E5928741E63006871C6 /* Extension+UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		63E2F41C2873551400282E60 = {
@@ -353,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63DB7E4528741AFC006871C6 /* APILogger.swift in Sources */,
+				63DB7E5728741E29006871C6 /* UIActivityIndicatorView.swift in Sources */,
 				63DB7E4128741AFC006871C6 /* APIRequestAdapter.swift in Sources */,
 				63DB7E4228741AFC006871C6 /* APIRequestInterceptor.swift in Sources */,
 				63DB7E4428741AFC006871C6 /* APIDataProvider.swift in Sources */,
@@ -365,6 +388,7 @@
 				63DB7E3928741997006871C6 /* LoadingProtocol.swift in Sources */,
 				63DB7E5128741D0E006871C6 /* DataProviderProtocol.swift in Sources */,
 				63DB7E5328741D0E006871C6 /* RequestProtocol.swift in Sources */,
+				63DB7E5A28741E63006871C6 /* Extension+UIView.swift in Sources */,
 				63E2F4292873551400282E60 /* AppDelegate.swift in Sources */,
 				63DB7E5028741D0E006871C6 /* Typealias.swift in Sources */,
 				63DB7E5228741D0E006871C6 /* APIDecodableResponseRequest.swift in Sources */,
@@ -501,7 +525,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YW89A2JD7V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AuthApp-MVVM/Info.plist";
+				INFOPLIST_FILE = "AuthApp-MVVM/AuthProject/Configurations/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -529,7 +553,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YW89A2JD7V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AuthApp-MVVM/Info.plist";
+				INFOPLIST_FILE = "AuthApp-MVVM/AuthProject/Configurations/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
