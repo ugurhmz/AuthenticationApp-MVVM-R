@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginVC: BaseViewController<LoginViewModel> {
     
     private let txtEmail: CustomTextField = {
            let txt = CustomTextField(padding: 24, height: 60)

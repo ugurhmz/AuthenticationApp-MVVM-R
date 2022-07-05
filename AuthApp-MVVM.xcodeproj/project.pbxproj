@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		638FF1712874D16F00237D51 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1702874D16F00237D51 /* RegisterVC.swift */; };
 		638FF1732874D23A00237D51 /* Extension+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1722874D23A00237D51 /* Extension+UIAlert.swift */; };
+		638FF1762874DEF400237D51 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1742874DEF400237D51 /* BaseViewModel.swift */; };
+		638FF1772874DEF400237D51 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1752874DEF400237D51 /* BaseViewController.swift */; };
+		638FF17A2874DF1600237D51 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1792874DF1600237D51 /* Closures.swift */; };
+		638FF17C2874DF4100237D51 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF17B2874DF4100237D51 /* LoginViewModel.swift */; };
+		638FF17E2874E04B00237D51 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF17D2874E04B00237D51 /* LoginModel.swift */; };
 		63DB7E3728741997006871C6 /* ActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3428741997006871C6 /* ActivityIndicatorProtocol.swift */; };
 		63DB7E3828741997006871C6 /* BlockingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3528741997006871C6 /* BlockingActivityIndicator.swift */; };
 		63DB7E3928741997006871C6 /* LoadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7E3628741997006871C6 /* LoadingProtocol.swift */; };
@@ -47,6 +52,11 @@
 		5049CE98E6F982D5C9B0A618 /* Pods-AuthApp-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-MVVM.release.xcconfig"; path = "Target Support Files/Pods-AuthApp-MVVM/Pods-AuthApp-MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		638FF1702874D16F00237D51 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		638FF1722874D23A00237D51 /* Extension+UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIAlert.swift"; sourceTree = "<group>"; };
+		638FF1742874DEF400237D51 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		638FF1752874DEF400237D51 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		638FF1792874DF1600237D51 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		638FF17B2874DF4100237D51 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		638FF17D2874E04B00237D51 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		63DB7E3428741997006871C6 /* ActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
 		63DB7E3528741997006871C6 /* BlockingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockingActivityIndicator.swift; sourceTree = "<group>"; };
 		63DB7E3628741997006871C6 /* LoadingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingProtocol.swift; sourceTree = "<group>"; };
@@ -136,6 +146,7 @@
 		632AE22B28739D0A00C12C51 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				638FF1782874DF0C00237D51 /* Constants */,
 				63DB7E5828741E59006871C6 /* Extensions */,
 			);
 			path = Utilities;
@@ -185,6 +196,14 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		638FF1782874DF0C00237D51 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				638FF1792874DF1600237D51 /* Closures.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		63DB7E3228741930006871C6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +227,8 @@
 				63E2F42C2873551400282E60 /* LoginVC.swift */,
 				63DB7E5E2874200E006871C6 /* LoginRoute.swift */,
 				63DB7E74287420D0006871C6 /* LoginRouter.swift */,
+				638FF17B2874DF4100237D51 /* LoginViewModel.swift */,
+				638FF17D2874E04B00237D51 /* LoginModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -259,6 +280,8 @@
 		63DB7E5B28741FAA006871C6 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				638FF1752874DEF400237D51 /* BaseViewController.swift */,
+				638FF1742874DEF400237D51 /* BaseViewModel.swift */,
 				63DB7E5C28741FDF006871C6 /* MainNavigationController.swift */,
 			);
 			path = Base;
@@ -460,6 +483,7 @@
 			files = (
 				63DB7E4528741AFC006871C6 /* APILogger.swift in Sources */,
 				63DB7E5728741E29006871C6 /* UIActivityIndicatorView.swift in Sources */,
+				638FF1772874DEF400237D51 /* BaseViewController.swift in Sources */,
 				63DB7E7D28743F95006871C6 /* ForgotPasswordVC.swift in Sources */,
 				63DB7E73287420BB006871C6 /* Router.swift in Sources */,
 				638FF1732874D23A00237D51 /* Extension+UIAlert.swift in Sources */,
@@ -470,6 +494,8 @@
 				63DB7E4E28741D0E006871C6 /* RequestMethod.swift in Sources */,
 				638FF1712874D16F00237D51 /* RegisterVC.swift in Sources */,
 				63E2F42D2873551400282E60 /* LoginVC.swift in Sources */,
+				638FF17E2874E04B00237D51 /* LoginModel.swift in Sources */,
+				638FF17C2874DF4100237D51 /* LoginViewModel.swift in Sources */,
 				63DB7E5428741D0E006871C6 /* DecodableResponseRequest.swift in Sources */,
 				63DB7E3828741997006871C6 /* BlockingActivityIndicator.swift in Sources */,
 				63DB7E5D28741FDF006871C6 /* MainNavigationController.swift in Sources */,
@@ -479,6 +505,7 @@
 				63DB7E5128741D0E006871C6 /* DataProviderProtocol.swift in Sources */,
 				63DB7E5328741D0E006871C6 /* RequestProtocol.swift in Sources */,
 				63DB7E5A28741E63006871C6 /* Extension+UIView.swift in Sources */,
+				638FF1762874DEF400237D51 /* BaseViewModel.swift in Sources */,
 				63DB7E6E287420A9006871C6 /* Transition.swift in Sources */,
 				63E2F4292873551400282E60 /* AppDelegate.swift in Sources */,
 				63DB7E5028741D0E006871C6 /* Typealias.swift in Sources */,
@@ -487,6 +514,7 @@
 				63DB7E3728741997006871C6 /* ActivityIndicatorProtocol.swift in Sources */,
 				63DB7E5F2874200E006871C6 /* LoginRoute.swift in Sources */,
 				63DB7E75287420D0006871C6 /* LoginRouter.swift in Sources */,
+				638FF17A2874DF1600237D51 /* Closures.swift in Sources */,
 				63DB7E772874214D006871C6 /* AppRouterContainer.swift in Sources */,
 				63DB7E6F287420A9006871C6 /* PlaceOnWindowTransition.swift in Sources */,
 			);

@@ -15,8 +15,8 @@ extension LoginRoute where Self: RouterProtocol {
     
     func placeOnWindowHome() {
            let router = LoginRouter()
-          // let viewModel = HomeViewModel(router: router)
-           let viewController = LoginVC()
+           let viewModel = LoginViewModel(router: router)
+           let viewController = LoginVC(viewModel: viewModel)
            let navigationController = MainNavigationController(rootViewController: viewController)
            
            let transition = PlaceOnWindowTransition()
