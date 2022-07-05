@@ -53,9 +53,9 @@ class LoginVC: UIViewController {
 
     private let loginTxtLabel: UILabel = {
        let label = UILabel()
-        label.font =  .systemFont(ofSize: 53, weight: .bold)
+        label.font =  .systemFont(ofSize: 60, weight: .bold)
        label.text = "Login"
-       label.textColor = .black
+       label.textColor = #colorLiteral(red: 0.7163005471, green: 0.6066218019, blue: 0.9284923673, alpha: 1)
        return label
     }()
 
@@ -63,14 +63,15 @@ class LoginVC: UIViewController {
        let label = UILabel()
        label.font = .systemFont(ofSize: 24, weight: .medium)
        label.text = "Forgot password?"
-       label.textColor = .black
+       label.textColor =  #colorLiteral(red: 0.3011791706, green: 0.3271438479, blue: 0.3620740175, alpha: 0.9192880795)
        return label
     }()
 
     private let loginBtn: UIButton = {
        let btn = UIButton(type: .system)
        btn.setTitle("Login", for: .normal)
-       btn.setTitleColor(.black, for: .normal)
+      //  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+       btn.setTitleColor( #colorLiteral(red: 0.3011791706, green: 0.3271438479, blue: 0.3620740175, alpha: 0.9192880795), for: .normal)
        btn.layer.cornerRadius = 15
        btn.backgroundColor = .white
         btn.layer.borderWidth = 0.7
@@ -79,11 +80,11 @@ class LoginVC: UIViewController {
        //btn.addTarget(self, action: #selector(clickLoginBtn), for: .touchUpInside)
        return btn
     }()
-
+    
     private let registerBtn: UIButton = {
        let btn = UIButton(type: .system)
        btn.setTitle("Register", for: .normal)
-       btn.setTitleColor(UIColor(red: 16/255, green: 129/255, blue: 49/255, alpha: 1), for: .normal)
+       btn.setTitleColor(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), for: .normal)
        btn.layer.cornerRadius = 15
        btn.backgroundColor = .white
        btn.layer.borderWidth = 1
@@ -99,8 +100,6 @@ class LoginVC: UIViewController {
         view.backgroundColor = .white
         setupViews()
         setConstraints()
-        navigationController?.navigationBar.isHidden = true
-       
     }
     private func setupViews() {
        view.addSubview(stackView)
@@ -118,9 +117,31 @@ class LoginVC: UIViewController {
        
        // forgot pw click handle
        forgetPwTxtLabel.isUserInteractionEnabled = true
-      // let guestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(clickForgotPw(_:)))
-       //forgetPwTxtLabel.addGestureRecognizer(guestureRecognizer)
+       let guestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(clickForgotPw(_:)))
+       forgetPwTxtLabel.addGestureRecognizer(guestureRecognizer)
+        
+       forgetPwTxtLabel.underline()
+       loginTxtLabel.underline()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+ 
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+}
+
+//MARK: - @OBJC Func
+extension LoginVC {
+    // click forgot pw
+     @objc func clickForgotPw(_ sender: Any){
+      print("qweqw")
+         let view = ForgotPasswordVC()
+        
+         navigationController?.pushViewController(view, animated: true)
+     }
+    
 }
 extension LoginVC {
     private func setConstraints(){
@@ -145,7 +166,7 @@ extension LoginVC {
                            leading: view.leadingAnchor,
                            bottom: nil,
                            trailing: nil,
-                           padding: .init(top: 200, left: 46, bottom: 30, right: 10))
+                           padding: .init(top: 180, left: 46, bottom: 30, right: 10))
         
         
        
@@ -160,4 +181,5 @@ extension LoginVC {
         
     }
 }
+
 
