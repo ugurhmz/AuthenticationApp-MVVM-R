@@ -97,8 +97,7 @@ class LoginVC: BaseViewController<LoginViewModel> {
     
     // Go RegisterVC
     @objc func goRegisterVC(){
-        let view = RegisterVC()
-        navigationController?.pushViewController(view, animated: true)
+        viewModel.showRegisterOnWindow()
     }
 
 

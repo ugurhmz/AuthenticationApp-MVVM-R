@@ -14,6 +14,12 @@
 		638B65BF28759697008D4959 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65BE28759697008D4959 /* HomeRouter.swift */; };
 		638B65C12875BF73008D4959 /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65C02875BF73008D4959 /* LogoutRequest.swift */; };
 		638B65C32875BFA0008D4959 /* SuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65C22875BFA0008D4959 /* SuccessResponse.swift */; };
+		638B65C52875D56F008D4959 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65C42875D56F008D4959 /* RegisterRequest.swift */; };
+		638B65C72875D61B008D4959 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65C62875D61B008D4959 /* RegisterViewModel.swift */; };
+		638B65C92875D65F008D4959 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65C82875D65F008D4959 /* RegisterRouter.swift */; };
+		638B65CB2875D686008D4959 /* RegisterRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65CA2875D686008D4959 /* RegisterRoute.swift */; };
+		638B65CD2875D6F6008D4959 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65CC2875D6F6008D4959 /* PushTransition.swift */; };
+		638B65CF2875D714008D4959 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65CE2875D714008D4959 /* Animator.swift */; };
 		638FF1712874D16F00237D51 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1702874D16F00237D51 /* RegisterVC.swift */; };
 		638FF1732874D23A00237D51 /* Extension+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1722874D23A00237D51 /* Extension+UIAlert.swift */; };
 		638FF1762874DEF400237D51 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FF1742874DEF400237D51 /* BaseViewModel.swift */; };
@@ -67,6 +73,12 @@
 		638B65BE28759697008D4959 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		638B65C02875BF73008D4959 /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
 		638B65C22875BFA0008D4959 /* SuccessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessResponse.swift; sourceTree = "<group>"; };
+		638B65C42875D56F008D4959 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		638B65C62875D61B008D4959 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		638B65C82875D65F008D4959 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		638B65CA2875D686008D4959 /* RegisterRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRoute.swift; sourceTree = "<group>"; };
+		638B65CC2875D6F6008D4959 /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		638B65CE2875D714008D4959 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		638FF1702874D16F00237D51 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		638FF1722874D23A00237D51 /* Extension+UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIAlert.swift"; sourceTree = "<group>"; };
 		638FF1742874DEF400237D51 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -227,6 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				638FF1702874D16F00237D51 /* RegisterVC.swift */,
+				638B65C62875D61B008D4959 /* RegisterViewModel.swift */,
+				638B65C82875D65F008D4959 /* RegisterRouter.swift */,
+				638B65CA2875D686008D4959 /* RegisterRoute.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -245,6 +260,7 @@
 			children = (
 				638FF1802874E16300237D51 /* LoginRequest.swift */,
 				638B65C02875BF73008D4959 /* LogoutRequest.swift */,
+				638B65C42875D56F008D4959 /* RegisterRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -364,6 +380,7 @@
 			children = (
 				63DB7E6D287420A9006871C6 /* PlaceOnWindowTransition.swift */,
 				63DB7E6C287420A9006871C6 /* Transition.swift */,
+				638B65CC2875D6F6008D4959 /* PushTransition.swift */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -380,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				63DB7E72287420BB006871C6 /* Router.swift */,
+				638B65CE2875D714008D4959 /* Animator.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -550,10 +568,12 @@
 				63DB7E73287420BB006871C6 /* Router.swift in Sources */,
 				638FF1732874D23A00237D51 /* Extension+UIAlert.swift in Sources */,
 				638FF1812874E16300237D51 /* LoginRequest.swift in Sources */,
+				638B65C52875D56F008D4959 /* RegisterRequest.swift in Sources */,
 				63DB7E4128741AFC006871C6 /* APIRequestAdapter.swift in Sources */,
 				63DB7E4228741AFC006871C6 /* APIRequestInterceptor.swift in Sources */,
 				63DB7E4428741AFC006871C6 /* APIDataProvider.swift in Sources */,
 				638B65C12875BF73008D4959 /* LogoutRequest.swift in Sources */,
+				638B65CD2875D6F6008D4959 /* PushTransition.swift in Sources */,
 				63DB7E4328741AFC006871C6 /* DataProvider.swift in Sources */,
 				63DB7E4E28741D0E006871C6 /* RequestMethod.swift in Sources */,
 				638FF1712874D16F00237D51 /* RegisterVC.swift in Sources */,
@@ -561,6 +581,8 @@
 				63E2F42D2873551400282E60 /* LoginVC.swift in Sources */,
 				638FF17E2874E04B00237D51 /* LoginModel.swift in Sources */,
 				638FF17C2874DF4100237D51 /* LoginViewModel.swift in Sources */,
+				638B65CF2875D714008D4959 /* Animator.swift in Sources */,
+				638B65C72875D61B008D4959 /* RegisterViewModel.swift in Sources */,
 				63DB7E5428741D0E006871C6 /* DecodableResponseRequest.swift in Sources */,
 				638B65B828758878008D4959 /* HomeVC.swift in Sources */,
 				63DB7E3828741997006871C6 /* BlockingActivityIndicator.swift in Sources */,
@@ -574,6 +596,7 @@
 				63DB7E5328741D0E006871C6 /* RequestProtocol.swift in Sources */,
 				63DB7E5A28741E63006871C6 /* Extension+UIView.swift in Sources */,
 				638FF1762874DEF400237D51 /* BaseViewModel.swift in Sources */,
+				638B65C92875D65F008D4959 /* RegisterRouter.swift in Sources */,
 				63DB7E6E287420A9006871C6 /* Transition.swift in Sources */,
 				63E2F4292873551400282E60 /* AppDelegate.swift in Sources */,
 				638B65B6287581DE008D4959 /* Keychain.swift in Sources */,
@@ -584,6 +607,7 @@
 				63DB7E71287420B2006871C6 /* AppRouter.swift in Sources */,
 				63DB7E3728741997006871C6 /* ActivityIndicatorProtocol.swift in Sources */,
 				63DB7E5F2874200E006871C6 /* LoginRoute.swift in Sources */,
+				638B65CB2875D686008D4959 /* RegisterRoute.swift in Sources */,
 				638B65BB287595E5008D4959 /* HomeViewModel.swift in Sources */,
 				63DB7E75287420D0006871C6 /* LoginRouter.swift in Sources */,
 				638FF17A2874DF1600237D51 /* Closures.swift in Sources */,

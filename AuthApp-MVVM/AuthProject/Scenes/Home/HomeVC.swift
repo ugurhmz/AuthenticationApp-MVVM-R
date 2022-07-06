@@ -34,7 +34,6 @@ class HomeVC: BaseViewController<HomeViewModel>{
 
                navigationController?.navigationBar.prefersLargeTitles = false
           
-             //navigationItem.title = user.email
                    
            }
      }

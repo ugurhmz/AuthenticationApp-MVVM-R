@@ -7,11 +7,20 @@
 
 import UIKit
 
-class RegisterVC: UIViewController {
+class RegisterVC: BaseViewController<RegisterViewModel>{
     
-    private let shapeImageView: UIImageView = {
+    private let shapeTopImgView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named:"registershape2")
+        iv.image = UIImage(named:"registershape4")
+        iv.tintColor = .white
+        iv.layer.zPosition = -1
+        iv.alpha = 0.5
+        return iv
+    }()
+    
+    private let shapeBottomImgView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = UIImage(named:"registershapetop")
         iv.tintColor = .white
         iv.layer.zPosition = -1
         iv.alpha = 0.5
@@ -119,10 +128,7 @@ class RegisterVC: UIViewController {
         return iv
     }()
     
-    // click registerBtn
        @objc func clickRegisterBtn(){
-         
-           
            guard let email = txtEmail.text, !email.isEmpty,
                  let username = txtUsername.text, !username.isEmpty,
                  let password = txtPassword.text, !password.isEmpty,
@@ -148,10 +154,6 @@ class RegisterVC: UIViewController {
                                 fontSize: 25)
                return
            }
-
-           
-
-           //AUTH
        }
     
     private lazy var stackView: UIStackView = {
@@ -177,9 +179,10 @@ class RegisterVC: UIViewController {
 extension RegisterVC {
     private func setupViews(){
         view.addSubview(stackView)
-        view.addSubview(shapeImageView)
+        view.addSubview(shapeBottomImgView)
         view.addSubview(checkPaswoordFieldImg)
         view.addSubview(checkRePasswordImg)
+        view.addSubview(shapeTopImgView)
       
         checkPaswoordFieldImg.isHidden = true
         checkRePasswordImg.isHidden = true
@@ -192,20 +195,6 @@ extension RegisterVC {
     }
     
     private func setupShadows(){
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.frame
-        gradientLayer.startPoint = CGPoint(x: 1, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
-        gradientLayer.colors = [#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).withAlphaComponent(0.3).cgColor,  #colorLiteral(red: 0.6231334805, green: 0.8639383316, blue: 0.7231004834, alpha: 0.8796305877).withAlphaComponent(0.3).cgColor,
-                                #colorLiteral(red: 0.7163005471, green: 0.6066218019, blue: 0.9284923673, alpha: 1).withAlphaComponent(0.3).cgColor
-        ]
-        
-        gradientLayer.zPosition = -2
-        view.layer.addSublayer(gradientLayer)
-       
-       // registerTxtLabel.addSubview(gradientLayer)
-      
        // view.bringSubviewToFront(shapeImageView)
         view.bringSubviewToFront(stackView)
         view.bringSubviewToFront(checkPaswoordFieldImg)
@@ -245,13 +234,20 @@ extension RegisterVC {
                          padding: .init(top: 0, left: 30, bottom: 0, right: 30))
         stackView.centerYInSuperview()
         
-        shapeImageView.anchor(top: view.topAnchor,
+        shapeBottomImgView.anchor(top: nil,
                              leading: view.leadingAnchor,
                               bottom: view.bottomAnchor,
                               trailing: view.trailingAnchor,
-                              padding: .init(top: 35, left: 110, bottom: 15, right: 0)
+                              padding: .init(top: 0, left: 20, bottom: 35, right: 20)
         )
         
+        shapeTopImgView.anchor(top: view.topAnchor,
+                               leading: nil,
+                                bottom: nil,
+                                trailing: view.trailingAnchor,
+                                padding: .init(top: 45, left: 0, bottom: 0, right: 2),
+                               size: .init(width: 320, height: 260)
+          )
         
         
         checkPaswoordFieldImg.anchor(top: txtPassword.topAnchor,
