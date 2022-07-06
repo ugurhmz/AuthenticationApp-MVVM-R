@@ -27,7 +27,27 @@ class BaseViewController<V: BaseViewModelProtocol>: UIViewController, BaseViewCo
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        self.showActivityIndicator()
+        subscribeLoading()
+        subscribeActivityIndicator()
+    }
+    
+    private func subscribeActivityIndicator() {
+        viewModel.showActivityIndicatorView = { [weak self] in
+            self?.showActivityIndicator()
+        }
+        viewModel.hideActivityIndicatorView = { [weak self] in
+            self?.hideActivityIndicator()
+        }
+    }
+    
+    
+    private func subscribeLoading() {
+        viewModel.showLoading = { [weak self] in
+            self?.presentLoading()
+        }
+        viewModel.hideLoading = { [weak self] in
+            self?.dismissLoading()
+        }
     }
     
     #if DEBUG

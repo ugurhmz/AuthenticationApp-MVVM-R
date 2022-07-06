@@ -129,6 +129,8 @@ class LoginVC: BaseViewController<LoginViewModel> {
         
        forgetPwTxtLabel.underline()
        loginTxtLabel.underline()
+        
+     
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -136,14 +138,6 @@ class LoginVC: BaseViewController<LoginViewModel> {
  
         navigationController?.navigationBar.isHidden = true
     }
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        if (viewModel.currentUser != nil)  {
-//            let view = HomeVC()
-//            navigationController?.pushViewController(view, animated: true)
-//        }
-//    }
     
 }
 

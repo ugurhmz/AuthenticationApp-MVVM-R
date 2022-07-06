@@ -8,12 +8,12 @@
 import UIKit
 
 protocol LoginRoute {
-    func placeOnWindowHome()
+    func placeOnLogin()
 }
 
 extension LoginRoute where Self: RouterProtocol {
     
-    func placeOnWindowHome() {
+    func placeOnLogin() {
            let router = LoginRouter()
            let viewModel = LoginViewModel(router: router)
            let viewController = LoginVC(viewModel: viewModel)

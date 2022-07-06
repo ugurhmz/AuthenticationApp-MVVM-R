@@ -15,23 +15,24 @@ final class LoginViewModel: BaseViewModel<LoginRouter> {
     var currentUser: LoginResponseModel?
     var reloadDataClosure: VoidClosure?
     
-    func pushLogin() {
+    func pushHome() {
         router.placeOnWindowHome()
     }
+    
+    
 }
 
 extension LoginViewModel {
     
     func sendLoginRequest(email: String, password: String ){
+        showActivityIndicatorView?()
         let request = LoginRequest(email: email, password: password)
         dataProvider.request(for: request) { [weak self] result in
             guard let self = self else { return }
-            print("result",result)
+            self.hideActivityIndicatorView?()
             switch result {
                 
-                
             case .success(let response):
-               
                
                 if let myres = response?.msg {
                     SnackHelper.showSnack(message: myres )
@@ -47,7 +48,7 @@ extension LoginViewModel {
                     self.keychain.set(loginToken, forKey: Keychain.token)
                     self.currentUser = response
                     self.reloadDataClosure?()
-                    self.pushLogin()
+                    self.pushHome()
                 }
                 
                 

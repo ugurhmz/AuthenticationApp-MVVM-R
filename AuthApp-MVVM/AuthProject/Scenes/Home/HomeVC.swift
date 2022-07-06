@@ -54,10 +54,11 @@ extension HomeVC {
                   setupLogoutRightBarButton()
          } else {
                   navigationItem.rightBarButtonItem = .none
+             viewModel.userLogout()
          }
     }
     
     @objc func logoutBarButtonDidTap() {
-        
+        viewModel.userLogout()
     }
 }

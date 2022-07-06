@@ -7,6 +7,7 @@
 
 import Alamofire
 import Foundation
+import KeychainSwift
 
 public class APIRequestInterceptor: RequestInterceptor {
     
@@ -17,7 +18,7 @@ public class APIRequestInterceptor: RequestInterceptor {
                       completion: @escaping (Result<URLRequest, Error>) -> Void) {
         
         var urlRequest = urlRequest
-        let accessToken: String? = "YOUR_TOKEN"
+        let accessToken = KeychainSwift().get(Keychain.token)
         
         if let accessToken = accessToken {
             urlRequest.headers.add(name: "token", value: "Bearer \(accessToken)")
