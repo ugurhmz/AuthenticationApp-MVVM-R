@@ -33,7 +33,7 @@ extension UIViewController {
     
     
         //MARK: - Create Alert
-       func createAlert(title: String,
+        func createAlert(title: String,
                         msg: String,
                         prefStyle: UIAlertController.Style,
                         bgColor: UIColor,
@@ -46,7 +46,7 @@ extension UIViewController {
        
        
        //MARK: - Handle Fire Auth Err
-       func handleFireAuthError(error: Error,
+       func handleAuthError(error: Error,
                                 fontSize: CGFloat,
                                 textColor: UIColor,
                                 bgColor: UIColor) {

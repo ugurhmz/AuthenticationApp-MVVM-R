@@ -9,5 +9,6 @@ target 'AuthApp-MVVM' do
 	pod 'Alamofire', '~> 5.5'
   	pod 'Kingfisher', '~> 7.0'
 	pod 'SwiftEntryKit', '2.0.0'
+	pod 'KeychainSwift', '~> 20.0'
 
 end

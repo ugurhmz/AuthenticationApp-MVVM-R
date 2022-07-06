@@ -207,3 +207,16 @@ Pods/Target Support Files/SwiftEntryKit/SwiftEntryKit-umbrella.h
 Pods/Target Support Files/SwiftEntryKit/SwiftEntryKit.debug.xcconfig
 Pods/Target Support Files/SwiftEntryKit/SwiftEntryKit.modulemap
 Pods/Target Support Files/SwiftEntryKit/SwiftEntryKit.release.xcconfig
+Pods/KeychainSwift/LICENSE
+Pods/KeychainSwift/README.md
+Pods/KeychainSwift/Sources/KeychainSwift.swift
+Pods/KeychainSwift/Sources/KeychainSwiftAccessOptions.swift
+Pods/KeychainSwift/Sources/TegKeychainConstants.swift
+Pods/Pods.xcodeproj/xcuserdata/ugur-pc.xcuserdatad/xcschemes/KeychainSwift.xcscheme
+Pods/Target Support Files/KeychainSwift/KeychainSwift-dummy.m
+Pods/Target Support Files/KeychainSwift/KeychainSwift-Info.plist
+Pods/Target Support Files/KeychainSwift/KeychainSwift-prefix.pch
+Pods/Target Support Files/KeychainSwift/KeychainSwift-umbrella.h
+Pods/Target Support Files/KeychainSwift/KeychainSwift.debug.xcconfig
+Pods/Target Support Files/KeychainSwift/KeychainSwift.modulemap
+Pods/Target Support Files/KeychainSwift/KeychainSwift.release.xcconfig

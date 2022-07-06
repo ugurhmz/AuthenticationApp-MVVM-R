@@ -30,14 +30,16 @@ public struct APIDataProvider: DataProviderProtocol{
         
         public func request<T: DecodableResponseRequest>(for request: T, result: DataProviderResult<T.ResponseType>? = nil) {
             let request = createRequest(request)
-            request.validate()
             request.responseDecodable(of: T.ResponseType.self) { (response) in
+                
+                
                 switch response.result {
                 case .success(let value):
                     result?(.success(value))
                 case .failure(let error):
                     result?(.failure(error))
                 }
+                 
             }
         }
     

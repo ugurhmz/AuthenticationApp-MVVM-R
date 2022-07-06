@@ -80,20 +80,7 @@ class LoginVC: BaseViewController<LoginViewModel> {
        return btn
     }()
     
-    @objc func clickLoginBtn(){
-        guard let email = txtEmail.text, !email.isEmpty,
-                   let password = txtPassword.text, !password.isEmpty else {
-                       self.createAlert(title: "",
-                                        msg: "Email or password is empty!",
-                                        prefStyle: .alert,
-                                        bgColor: .white,
-                                        textColor: .black,
-                                        fontSize: 25)
-                       return
-       }
-        
-        viewModel.sendLoginRequest(email: email, password: password)
-    }
+   
     
     private let registerBtn: UIButton = {
        let btn = UIButton(type: .system)
@@ -149,6 +136,14 @@ class LoginVC: BaseViewController<LoginViewModel> {
  
         navigationController?.navigationBar.isHidden = true
     }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        if (viewModel.currentUser != nil)  {
+//            let view = HomeVC()
+//            navigationController?.pushViewController(view, animated: true)
+//        }
+//    }
     
 }
 
@@ -156,11 +151,28 @@ class LoginVC: BaseViewController<LoginViewModel> {
 extension LoginVC {
     // click forgot pw
      @objc func clickForgotPw(_ sender: Any){
-      print("qweqw")
          let view = ForgotPasswordVC()
-        
          navigationController?.pushViewController(view, animated: true)
      }
+    
+    @objc func clickLoginBtn(){
+        guard let email = txtEmail.text, !email.isEmpty,
+                   let password = txtPassword.text, !password.isEmpty else {
+                       self.createAlert(title: "",
+                                        msg: "Email or password is empty!",
+                                        prefStyle: .alert,
+                                        bgColor: .white,
+                                        textColor: .black,
+                                        fontSize: 25)
+                       return
+       }
+        
+        viewModel.sendLoginRequest(email: email, password: password)
+//        self.viewModel.reloadDataClosure = { [weak self] in
+//            guard let self = self else  { return }
+//            self.viewModel.pushLogin()
+//        }
+    }
     
 }
 extension LoginVC {

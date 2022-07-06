@@ -7,6 +7,6 @@
 
 import Foundation
 
-final class LoginRouter: Router {
-    //typealias Routes = HomeDetailRoute
+final class LoginRouter: Router, LoginRouter.Routes {
+    typealias Routes = HomeRoute
 }
