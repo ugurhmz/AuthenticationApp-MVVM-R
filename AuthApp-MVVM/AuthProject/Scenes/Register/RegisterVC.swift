@@ -44,6 +44,15 @@ class RegisterVC: BaseViewController<RegisterViewModel>{
         return txt
     }()
     
+    private let txtfullName: CustomTextField = {
+        let txt = CustomTextField(padding: 24, height: 55)
+        txt.backgroundColor = .white
+        txt.placeholder = "Full Name"
+        txt.layer.borderWidth = 0.4
+        return txt
+    }()
+    
+    
     private let txtEmail: CustomTextField = {
         let txt = CustomTextField(padding: 24, height: 55)
         txt.backgroundColor = .white
@@ -132,8 +141,9 @@ class RegisterVC: BaseViewController<RegisterViewModel>{
            guard let email = txtEmail.text, !email.isEmpty,
                  let username = txtUsername.text, !username.isEmpty,
                  let password = txtPassword.text, !password.isEmpty,
-                 let rePass = txtRePassword.text, !rePass.isEmpty
-
+                 let rePass = txtRePassword.text, !rePass.isEmpty,
+                    let fullName = txtfullName.text, !fullName.isEmpty
+                    
            else {
 
                      self.createAlert(title: "",
@@ -154,10 +164,12 @@ class RegisterVC: BaseViewController<RegisterViewModel>{
                                 fontSize: 25)
                return
            }
+           
+           viewModel.sendRegisterRequest(username: username, email: email, password: rePassword, name: fullName)
        }
     
     private lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [registerTxtLabel,txtUsername,txtEmail, txtPassword,txtRePassword, registerBtn ])
+        let stackView = UIStackView(arrangedSubviews: [registerTxtLabel,txtUsername,txtEmail,txtfullName, txtPassword,txtRePassword, registerBtn ])
         stackView.axis = .vertical
         stackView.spacing = 16
         return stackView

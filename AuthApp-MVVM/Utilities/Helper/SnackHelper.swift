@@ -17,8 +17,8 @@ class SnackHelper {
                            leading: nil,
                            bottom: nil,
                            trailing: nil,
-                           padding: .init(top: 20, left: 10, bottom: 20, right: 10),
-                           size: .init(width: 0, height: 100))
+                           padding: .init(top: 20, left: 17, bottom: 20, right: 17),
+                           size: .init(width: 0, height: 120))
         contentView.layer.cornerRadius = 30
         
         let label = UILabel()
