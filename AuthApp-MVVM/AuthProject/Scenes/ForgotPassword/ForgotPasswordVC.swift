@@ -71,6 +71,8 @@ class ForgotPasswordVC: BaseViewController<ForgotPasswordViewModel>{
                              fontSize: 25)
             return
         }
+        
+        viewModel.passwordReset(email: email)
     }
     
     private lazy var btnstackView: UIStackView = {

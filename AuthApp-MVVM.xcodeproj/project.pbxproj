@@ -10,6 +10,7 @@
 		637BDB302875F1820029F90C /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BDB2F2875F1820029F90C /* ForgotPasswordViewModel.swift */; };
 		637BDB322875F1CB0029F90C /* ForgotPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BDB312875F1CB0029F90C /* ForgotPasswordRouter.swift */; };
 		637BDB342875F1DE0029F90C /* ForgotPasswordRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BDB332875F1DE0029F90C /* ForgotPasswordRoute.swift */; };
+		637BDB362875F4920029F90C /* ResetPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BDB352875F4920029F90C /* ResetPasswordRequest.swift */; };
 		638B65B6287581DE008D4959 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65B5287581DE008D4959 /* Keychain.swift */; };
 		638B65B828758878008D4959 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65B728758878008D4959 /* HomeVC.swift */; };
 		638B65BB287595E5008D4959 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65BA287595E5008D4959 /* HomeViewModel.swift */; };
@@ -72,6 +73,7 @@
 		637BDB2F2875F1820029F90C /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		637BDB312875F1CB0029F90C /* ForgotPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRouter.swift; sourceTree = "<group>"; };
 		637BDB332875F1DE0029F90C /* ForgotPasswordRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRoute.swift; sourceTree = "<group>"; };
+		637BDB352875F4920029F90C /* ResetPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordRequest.swift; sourceTree = "<group>"; };
 		638B65B5287581DE008D4959 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		638B65B728758878008D4959 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		638B65BA287595E5008D4959 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				638FF1802874E16300237D51 /* LoginRequest.swift */,
 				638B65C02875BF73008D4959 /* LogoutRequest.swift */,
 				638B65C42875D56F008D4959 /* RegisterRequest.swift */,
+				637BDB352875F4920029F90C /* ResetPasswordRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				638FF187287508A600237D51 /* SnackHelper.swift in Sources */,
 				63DB7E5328741D0E006871C6 /* RequestProtocol.swift in Sources */,
 				63DB7E5A28741E63006871C6 /* Extension+UIView.swift in Sources */,
+				637BDB362875F4920029F90C /* ResetPasswordRequest.swift in Sources */,
 				638FF1762874DEF400237D51 /* BaseViewModel.swift in Sources */,
 				638B65C92875D65F008D4959 /* RegisterRouter.swift in Sources */,
 				63DB7E6E287420A9006871C6 /* Transition.swift in Sources */,
