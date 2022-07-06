@@ -24,6 +24,10 @@ final class LoginViewModel: BaseViewModel<LoginRouter> {
         router.pushRegister()
     }
     
+    func pushForgotPassword(){
+        router.pushPasswordResetVC()
+    }
+    
 }
 
 extension LoginViewModel {
@@ -48,7 +52,6 @@ extension LoginViewModel {
                     return
                 }
                 if let loginToken = response?.loginToken {
-                    print(loginToken)
                     self.keychain.set(loginToken, forKey: Keychain.token)
                     self.currentUser = response
                     self.reloadDataClosure?()

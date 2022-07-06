@@ -8,7 +8,6 @@
 import Foundation
 
 final class LoginRouter: Router, LoginRouter.Routes {
-    //typealias Routes = RegisterRoute & PasswordResetRoute
-    typealias Routes = RegisterRoute & HomeRoute
+    typealias Routes = RegisterRoute & HomeRoute & ForgotPasswordRoute
     
 }

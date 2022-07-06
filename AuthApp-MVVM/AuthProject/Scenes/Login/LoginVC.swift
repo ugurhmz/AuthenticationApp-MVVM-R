@@ -130,13 +130,10 @@ class LoginVC: BaseViewController<LoginViewModel> {
         
        forgetPwTxtLabel.underline()
        loginTxtLabel.underline()
-        
-     
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
- 
         navigationController?.navigationBar.isHidden = true
     }
     
@@ -146,8 +143,7 @@ class LoginVC: BaseViewController<LoginViewModel> {
 extension LoginVC {
     // click forgot pw
      @objc func clickForgotPw(_ sender: Any){
-         let view = ForgotPasswordVC()
-         navigationController?.pushViewController(view, animated: true)
+         viewModel.pushForgotPassword()
      }
     
     @objc func clickLoginBtn(){

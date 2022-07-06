@@ -36,7 +36,6 @@ extension RegisterViewModel {
                 
                 
             case .failure(let error):
-                print("abc")
                 SnackHelper.showSnack(message: error.localizedDescription )
             }
         }

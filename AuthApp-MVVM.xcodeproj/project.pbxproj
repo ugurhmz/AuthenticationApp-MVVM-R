@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637BDB302875F1820029F90C /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BDB2F2875F1820029F90C /* ForgotPasswordViewModel.swift */; };
+		637BDB322875F1CB0029F90C /* ForgotPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BDB312875F1CB0029F90C /* ForgotPasswordRouter.swift */; };
+		637BDB342875F1DE0029F90C /* ForgotPasswordRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BDB332875F1DE0029F90C /* ForgotPasswordRoute.swift */; };
 		638B65B6287581DE008D4959 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65B5287581DE008D4959 /* Keychain.swift */; };
 		638B65B828758878008D4959 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65B728758878008D4959 /* HomeVC.swift */; };
 		638B65BB287595E5008D4959 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B65BA287595E5008D4959 /* HomeViewModel.swift */; };
@@ -66,6 +69,9 @@
 /* Begin PBXFileReference section */
 		4F50CE0EF55A00FB5D177D32 /* Pods-AuthApp-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-AuthApp-MVVM/Pods-AuthApp-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		5049CE98E6F982D5C9B0A618 /* Pods-AuthApp-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-MVVM.release.xcconfig"; path = "Target Support Files/Pods-AuthApp-MVVM/Pods-AuthApp-MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		637BDB2F2875F1820029F90C /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		637BDB312875F1CB0029F90C /* ForgotPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRouter.swift; sourceTree = "<group>"; };
+		637BDB332875F1DE0029F90C /* ForgotPasswordRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRoute.swift; sourceTree = "<group>"; };
 		638B65B5287581DE008D4959 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		638B65B728758878008D4959 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		638B65BA287595E5008D4959 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -231,6 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				63DB7E7C28743F95006871C6 /* ForgotPasswordVC.swift */,
+				637BDB2F2875F1820029F90C /* ForgotPasswordViewModel.swift */,
+				637BDB312875F1CB0029F90C /* ForgotPasswordRouter.swift */,
+				637BDB332875F1DE0029F90C /* ForgotPasswordRoute.swift */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -574,8 +583,10 @@
 				63DB7E4428741AFC006871C6 /* APIDataProvider.swift in Sources */,
 				638B65C12875BF73008D4959 /* LogoutRequest.swift in Sources */,
 				638B65CD2875D6F6008D4959 /* PushTransition.swift in Sources */,
+				637BDB302875F1820029F90C /* ForgotPasswordViewModel.swift in Sources */,
 				63DB7E4328741AFC006871C6 /* DataProvider.swift in Sources */,
 				63DB7E4E28741D0E006871C6 /* RequestMethod.swift in Sources */,
+				637BDB342875F1DE0029F90C /* ForgotPasswordRoute.swift in Sources */,
 				638FF1712874D16F00237D51 /* RegisterVC.swift in Sources */,
 				638B65C32875BFA0008D4959 /* SuccessResponse.swift in Sources */,
 				63E2F42D2873551400282E60 /* LoginVC.swift in Sources */,
@@ -610,6 +621,7 @@
 				638B65CB2875D686008D4959 /* RegisterRoute.swift in Sources */,
 				638B65BB287595E5008D4959 /* HomeViewModel.swift in Sources */,
 				63DB7E75287420D0006871C6 /* LoginRouter.swift in Sources */,
+				637BDB322875F1CB0029F90C /* ForgotPasswordRouter.swift in Sources */,
 				638FF17A2874DF1600237D51 /* Closures.swift in Sources */,
 				63DB7E772874214D006871C6 /* AppRouterContainer.swift in Sources */,
 				63DB7E6F287420A9006871C6 /* PlaceOnWindowTransition.swift in Sources */,
