@@ -107,6 +107,8 @@ class LoginVC: BaseViewController<LoginViewModel> {
         view.backgroundColor = .white
         setupViews()
         setConstraints()
+        
+ 
     }
     private func setupViews() {
        view.addSubview(stackView)

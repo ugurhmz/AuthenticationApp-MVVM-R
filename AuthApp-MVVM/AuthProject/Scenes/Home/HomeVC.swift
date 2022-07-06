@@ -14,7 +14,12 @@ class HomeVC: BaseViewController<HomeViewModel>{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
+        viewModel.didSuccesLogout = { [weak self] in
+            guard let self = self else { return }
+            self.keychain.clear()
+            self.navigationItem.rightBarButtonItem = .none
+        }
     }
     
     private func customNavigateBar(){

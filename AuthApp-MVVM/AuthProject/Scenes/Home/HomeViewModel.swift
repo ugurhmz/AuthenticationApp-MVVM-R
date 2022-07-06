@@ -13,7 +13,7 @@ protocol HomeViewProtocol {
 }
 
 final class HomeViewModel: BaseViewModel<HomeRouter>, HomeViewProtocol {
-    
+    var didSuccesLogout: VoidClosure?
     func pushLoginScreen(){
         router.placeOnLogin()
     }
@@ -30,11 +30,14 @@ extension HomeViewModel {
             self.showActivityIndicatorView?()
             switch result {
             case .success(_ ):
-                print("sucess")
+                SnackHelper.showSnack(message: "Successfully logout.")
+                self.didSuccesLogout?()
                 self.pushLoginScreen()
             case .failure(let error):
                 SnackHelper.showSnack(message: error.localizedDescription )
             }
         }
     }
+    
+    
 }

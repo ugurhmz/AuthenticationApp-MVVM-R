@@ -14,6 +14,7 @@ final class LoginViewModel: BaseViewModel<LoginRouter> {
     let keychain = KeychainSwift()
     var currentUser: LoginResponseModel?
     var reloadDataClosure: VoidClosure?
+  
     
     func pushHome() {
         router.placeOnWindowHome()
